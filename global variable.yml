@@ -1,8 +1,9 @@
 --- 
 - name: playbook for global variables
   hosts: all
+  vars: dhananjay patil
   tasks:
     - name: 1st global variables
       debug:
-        msg: "{my 1st playbook}"
+        msg: "{{vars}}"
 ...
