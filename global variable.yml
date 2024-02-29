@@ -3,8 +3,10 @@
   hosts: all
   vars: 
       URL: www.dhananjaypatil.com
+      name: akash
   tasks:
     - name: 1st global variables
       debug:
         msg: "{{URL}}"
+        my name: "{{name}}"
 ...
