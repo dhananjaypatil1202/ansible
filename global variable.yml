@@ -1,9 +1,10 @@
 --- 
 - name: playbook for global variables
   hosts: all
-  vars: dhananjay patil
+  vars: 
+      URL: www.dhananjaypatil.com
   tasks:
     - name: 1st global variables
       debug:
-        msg: "{{vars}}"
+        msg: "{{URL}}"
 ...
