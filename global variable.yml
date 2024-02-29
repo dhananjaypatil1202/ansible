@@ -2,12 +2,12 @@
 - name: playbook for global variables
   hosts: all
   vars: 
-      URL: "www.dhananjaypatil.com"
-  tasks:
+      URL1: "www.dhananjaypatil.com"
+      URL2: "WWW.AKASH.COM"
     - name: 1st global variables
       debug:
-        msg: "{{URL}}"
+        msg: "{{URL1}}"
     - name: 2nd global variable
       debug:
-        msg: "{{URL}}"
+        msg: "{{URL2}}"
 ...
