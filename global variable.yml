@@ -1,0 +1,7 @@
+--- 
+- name: playbook for global variables
+  hosts: all
+    - name: 1st global variables
+      debug:
+        msg: "{my 1st playbook}"
+...
