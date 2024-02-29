@@ -1,0 +1,10 @@
+---
+  - name: playbook for local variables
+    hosts: all
+    task: 
+      - name: local variables
+        debug:
+          msg: "{{URL}}"
+          vars: 
+              URL: "dhanu.com"
+...
