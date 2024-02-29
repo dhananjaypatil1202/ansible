@@ -4,6 +4,7 @@
   vars: 
       URL1: "www.dhananjaypatil.com"
       URL2: "www.akash.com"
+  tasks:
     - name: 1st global variables
       debug:
         msg: "{{URL1}}"
