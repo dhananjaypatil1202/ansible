@@ -3,7 +3,7 @@
   hosts: all
   vars: 
       URL1: "www.dhananjaypatil.com"
-      URL2: "WWW.AKASH.COM"
+      URL2: "www.akash.com"
     - name: 1st global variables
       debug:
         msg: "{{URL1}}"
