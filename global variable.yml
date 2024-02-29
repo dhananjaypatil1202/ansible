@@ -8,5 +8,8 @@
     - name: 1st global variables
       debug:
         msg: "{{URL}}"
+  tasks: 
+    - name: 2nd global variable
+      debug:
         msg: "{{name}}"
 ...
