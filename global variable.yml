@@ -8,5 +8,5 @@
     - name: 1st global variables
       debug:
         msg: "{{URL}}"
-        my name: "{{name}}"
+        msg: "{{name}}"
 ...
