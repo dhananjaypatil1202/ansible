@@ -1,0 +1,10 @@
+---
+- name: pass value using prompt
+  host: all
+  vars_prompt:
+    - name: dhananjay
+      prompt: "password"
+  tasks:
+    - name: 1st prompt in file
+      debug:
+        msg: "{{URL}}"
