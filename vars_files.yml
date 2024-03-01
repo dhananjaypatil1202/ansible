@@ -4,3 +4,7 @@
   vars_files:
       variablefile.yml
   tasks:
+    - name: first example for var file
+      debug: 
+        msg: {{URL}}
+...
