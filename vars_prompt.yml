@@ -1,6 +1,6 @@
 ---
 - name: pass value using prompt
-  host: all
+  hosts: all
   vars_prompt:
     - name: dhananjay
       prompt: "password"
