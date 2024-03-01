@@ -4,12 +4,8 @@
   vars_prompt:
     - name: dhananjay
       prompt: "password"
-  vars:
-    URL: "dhananjay.com"
   tasks:
     - name: 1st prompt in file
       debug:
         msg: "{{dhananjay}}"
-      debug:
-        msg: "{{URL}}"
 ...
