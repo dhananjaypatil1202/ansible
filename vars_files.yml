@@ -1,8 +1,7 @@
 ---
 - name: file variables
   hosts: all
-  vars_files:
-      variablefile.yml
+  vars_files: variablefile.yml
   tasks:
     - name: first example for var file variables
       debug: 
