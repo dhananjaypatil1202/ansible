@@ -10,7 +10,5 @@
     - name: 1st prompt in file
       debug:
         msg: "{{dhananjay}}"
-    - name: 2nd URL
-      debug:
         msg: "{{URL}}"
 ...
