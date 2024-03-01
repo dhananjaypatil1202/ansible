@@ -1,9 +1,9 @@
 ---
 - name: prompt for user input
   hosts: all
-  vars_prompt:
-    - name: dhananjay
-      prompt: "password"
+  vars_prompt:                      #take input form user
+    - name: dhananjay               #give name of user
+      prompt: "password"            #what display when we take input form user
   tasks:
     - name: 1st prompt in file
       debug:
