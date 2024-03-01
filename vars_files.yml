@@ -5,5 +5,5 @@
   tasks:
     - name: first example for var file variables
       debug: 
-        msg: {{URL}}
+        msg: "{{URL}}"
 ...
