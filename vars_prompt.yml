@@ -7,5 +7,5 @@
   tasks:
     - name: 1st prompt in file
       debug:
-        msg: "{{URL}}"
+        msg: "{{dhananjay}}"
 ...
