@@ -2,10 +2,10 @@
 - name: pass value using prompt
   hosts: all
   vars_prompt:
-    - name: dhananjay
+    - name: 
       prompt: "password"
   tasks:
     - name: 1st prompt in file
       debug:
-        msg: "{{dhananjay}}"
+        msg: "{{}}"
 ...
