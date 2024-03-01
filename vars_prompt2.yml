@@ -1,0 +1,13 @@
+---
+- name: take input from user
+  hosts: all
+  vars_prompt:
+    - name: username
+      prompt: please enter your name
+      private: no 
+    - name: password
+      prompt: please enter your password
+      private: yes
+  tasks:
+    - debug:
+        msg: "The username is {{username}} and password is {{password}}"
