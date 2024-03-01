@@ -4,10 +4,10 @@
   vars_prompt:
     - name: username
       prompt: please enter your name
-      private: no 
+      private: no                                    #--- display on screen
     - name: password
-      prompt: please enter your password
-      private: yes
+      prompt: please enter your password             
+      private: yes                                   #--- not display
   tasks:
     - debug:
         msg: "The username is {{username}} and password is {{password}}"
