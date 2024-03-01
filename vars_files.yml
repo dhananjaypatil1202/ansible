@@ -1,0 +1,6 @@
+---
+- name: file variables
+  hosts: all
+  vars_files:
+      variablefile.yml
+  tasks:
