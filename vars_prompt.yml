@@ -1,5 +1,5 @@
 ---
-- name: pass value using prompt
+- name: prompt for user input
   hosts: all
   vars_prompt:
     - name: dhananjay
