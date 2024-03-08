@@ -4,10 +4,10 @@
   become: yes
   tasks: 
     - name: add list of users in my nodes
-      user: 
+      user:                              #user = module
         name: "{{ item }}" 
         state: present
-      with_items:
+      with_items:                        #with items is module
         - jarvis
         - spider               #script will be executed until items will created
                                # it will be executed by 2 times
