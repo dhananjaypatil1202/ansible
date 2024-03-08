@@ -4,5 +4,5 @@
   tasks:
     - name: writing my first script
       debug:
-        msg: my first playbook is operational now
+        msg: "{{URL}}"            #url variable mention in HOST FILE
 ...
