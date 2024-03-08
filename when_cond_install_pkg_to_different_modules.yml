@@ -1,0 +1,11 @@
+---
+- name: example playbook with when and command module
+  hosts: all
+  become: yes                     #also use become=true
+  tasks:
+    - name: Install Apache web-server for debian family
+      command: apt install apache2 -y
+      when: ansible_os_family == "Debian"
+    - name: Install Httpd for redhat family
+      command: Yum install httpd -y
+      when: ansible_os_family == "RedHat"
