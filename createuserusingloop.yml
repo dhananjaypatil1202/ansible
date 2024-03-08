@@ -9,6 +9,6 @@
         state: present
       loop:
         - abc
-        - def              #script will be executed until items will created
+        - def1              #script will be executed until items will created
                                # it will be executed by 2 times
                                #when you have to create new user just change the items values
