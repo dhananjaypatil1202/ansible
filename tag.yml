@@ -1,0 +1,15 @@
+---
+- name: tag playbook
+  hosts: all
+  
+  tasks:
+    - name: Print message-1
+      debug: 
+        msg: "write anything : {{ansible_user_git}}"
+      tags: demo
+  
+    - name: Print message-2
+      debug: 
+        msg: "write something : {{ansible_env.LOGNAME}}"
+      tags: demo
+...
