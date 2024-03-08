@@ -5,11 +5,11 @@
   tasks:
     - name: Print message-1
       debug: 
-        msg: "write anything : {{ansible_user_git}}"
+        msg: "dhananjay"
       tags: demo
   
     - name: Print message-2
       debug: 
-        msg: "write something : {{ansible_env.LOGNAME}}"
+        msg: "akash"
       tags: demo2
 ...
