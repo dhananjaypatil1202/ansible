@@ -5,10 +5,10 @@
   tasks: 
     - name: add list of users in my nodes
       user: 
-        name: "{{ loop }}" 
+        name: "{{ item }}" 
         state: present
-      loop:
-        - abc
-        - def1              #script will be executed until items will created
+      with_items:
+        - jarvis
+        - spider               #script will be executed until items will created
                                # it will be executed by 2 times
                                #when you have to create new user just change the items values
