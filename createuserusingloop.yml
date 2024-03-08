@@ -7,4 +7,6 @@
       user: name = "{{}}" state = present
       with_items:
         - jarvis
-        - spider
+        - spider               #script will be executed until items will created
+                               # it will be executed by 2 times
+                               #when you have to create new user just change the items values
