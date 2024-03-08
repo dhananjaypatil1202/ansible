@@ -1,0 +1,14 @@
+---
+- name: multiple pkg using loop
+  hosts: all
+  become: true
+  tasks:
+    - name: Install multiple pkg in node
+      apt:
+        name: "{{item}}"
+        state: latest
+      loop:
+        - samba
+        - nginx
+        - tree
+...
