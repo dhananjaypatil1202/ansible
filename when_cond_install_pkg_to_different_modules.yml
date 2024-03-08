@@ -7,6 +7,6 @@
       command: apt install apache2 -y
       when: ansible_os_family == "Debian"
     - name: Install Httpd for redhat family
-      command: Yum install httpd -y
+      command: yum install httpd -y
       when: ansible_os_family == "RedHat"
 ...
