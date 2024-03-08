@@ -1,0 +1,9 @@
+--- 
+- name: Example playbook for gather fact
+  hosts: all
+  gather_facts: yes
+  tasks:
+    - name: Print the Message
+      debug:
+        msg "{{anisble_selinux_python_present}}"
+...
