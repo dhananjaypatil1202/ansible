@@ -6,7 +6,7 @@
     - name: Install multiple pkg in node
       apt:
         name: "{{ item }}"
-        state: latest
+        state: present
       loop:
         - samba
         - nginx
