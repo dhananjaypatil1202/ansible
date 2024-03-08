@@ -4,7 +4,9 @@
   become: yes
   tasks: 
     - name: add list of users in my nodes
-      user: name = "{{}}" state = present
+      user: 
+        name: "{{ item }}" 
+        state: present
       with_items:
         - jarvis
         - spider               #script will be executed until items will created
