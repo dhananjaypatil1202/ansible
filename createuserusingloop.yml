@@ -8,7 +8,7 @@
         name: "{{ loop }}" 
         state: present
       loop:
-        - jarvis1
-        - spider1              #script will be executed until items will created
+        - abc
+        - def              #script will be executed until items will created
                                # it will be executed by 2 times
                                #when you have to create new user just change the items values
