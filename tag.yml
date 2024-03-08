@@ -11,5 +11,5 @@
     - name: Print message-2
       debug: 
         msg: "akash"
-      tags: demo2
+      tags: demo2                 # tag is module
 ...
