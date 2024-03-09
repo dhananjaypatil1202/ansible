@@ -5,7 +5,7 @@
   tasks: 
     - name: add list of users in my nodes
       user:                              #user = module
-        name: "{{ item }}" 
+        name: "{{ item }}"               #mention in with items
         state: present
       with_items:                        #with items is module
         - jarvis
