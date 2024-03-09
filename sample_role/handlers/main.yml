@@ -1,2 +1,6 @@
 ---
-# handlers file for sample_role
+- name: stratingnginx
+  systemd:
+    name: nginx
+    state: started
+    enabled: true
