@@ -1,5 +1,5 @@
 ---
-- name: stratingnginx
+- name: startingnginx
   systemd:
     name: nginx
     state: started
