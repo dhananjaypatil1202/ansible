@@ -1,0 +1,8 @@
+---
+- name: First basic playbook
+  hosts: all
+  tasks:
+  - name: test connectivity           #give name with help of name we easily identify our task
+    ping:                              #provide module
+ 
+    

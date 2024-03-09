@@ -1,0 +1,13 @@
+---
+- name: playbook for install and start service
+  hosts: all
+  tasks:
+    - name: Installing nginx
+      apt:   #for centos use yum                            #module
+        name: nginx                      #pkg name
+        state: present                   #ensure pkg is installed
+    - name: starting nginx service
+      service:                           #service is ansible module use for services
+        name: nginx 
+        state: started                    #start
+        enabled: true                     #enabled

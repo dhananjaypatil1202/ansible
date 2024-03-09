@@ -1,0 +1,14 @@
+---
+- name: Copying files to remote
+  hosts: all
+  become: yes
+  become_user: ec2-user
+  tasks:
+  - name: Copy files
+    copy:  
+      src: /root/gk.txt
+      dest: /home/ec2-user/dp  #but after an copy file to remote file will copied but permisiion will not chnages it will copy same as root user.
+        # owner: ubuntu        # so permisiion will be changes give as ubuntu user to remote
+        # group: ubuntu        # group perm. give to gorup to hosts server 
+        #     mode: 0777           # for change permisiion files to hosts server 
+        #      backup: true         #suppose 
