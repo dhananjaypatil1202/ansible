@@ -5,5 +5,5 @@
   tasks:
     - name: Print the Message
       debug:
-        msg: "{{ansible_selinux_python_present}}"
+        msg: "{{nginx}}"
 ...
